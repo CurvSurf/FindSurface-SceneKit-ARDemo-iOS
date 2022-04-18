@@ -6,7 +6,7 @@
 
 ## Overview
 
-This demo app demonstrates a real-time AR SceneKit application using FindSurface to search point clouds, which ARKit provides, for geometry shapes. 
+This demo app demonstrates a real-time AR SceneKit application using FindSurface to search point clouds, which ARKit provides, for geometry shapes. The source code of this app is based on the Xcode Augmented Reality (SceneKit, iOS) template project. 
 
 [FindSurfaceFramework](https://github.com/CurvSurf/FindSurface-iOS) is required to build the source code into a program. Download the framework [here](https://github.com/CurvSurf/FindSurface-iOS/releases) and refer to [here](https://github.com/CurvSurf/FindSurface-iOS/blob/master/How-to-import-FindSurface-Framework-to-your-project.md) for an instruction about how to setup your project to build it with the framework.
 
@@ -37,6 +37,7 @@ Compared to the [gui demo](https://github.com/CurvSurf/FindSurface-GUIDemo-iOS),
 
 ![interface](README.images/ar-scene-with-pointcloud.jpg)
 
+> The following descriptions start from the lower-left corner of the picture above and proceed counterclockwise.
 1. [Feature types](https://github.com/CurvSurf/FindSurface#auto-detection) of surfaces to detect (plane/sphere/cylinder only).
 2. Confidence levels to filter point cloud (e.g., the "`C.Med`" option means filtering out the points having "low" confidence).
 3. The opacity of the point cloud and radius indicators.
