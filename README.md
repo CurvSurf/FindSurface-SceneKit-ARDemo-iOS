@@ -60,9 +60,10 @@ The list of the virtual objects and the places to find them are as follows:
 
 | Geometry | Description |
 |:--------:|:------------|
-| Plane (vertical) | A television displaying the camera stream. |
-| Plane (horizontal) | CurvSurf's pull-up banner. |
-| Plane (sloped) | A directional sign with the CurvSurf logo. |
+| Plane <br>(vertical wall) | A television displaying the camera stream. |
+| Plane <br>(horizontal floor) | CurvSurf's pull-up banner. |
+| Plane <br>(horizontal ceiling) | CurvSurf's round hanging banner. |
+| Plane <br>(sloped) | A directional sign with the CurvSurf logo. |
 | Sphere & Cylinder | An animation effect that makes the FindSurface logo go around along the circumference of the surface. | 
 
 **The original scene**
