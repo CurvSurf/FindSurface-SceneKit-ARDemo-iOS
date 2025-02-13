@@ -402,12 +402,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, SCNSceneRendererDeleg
                 self.fsCtx.measurementAccuracy = 0.02 // error is allowed up to 2 cm
                 self.fsCtx.meanDistance        = 0.2  // up to 20 cm
                 
-                self.fsCtx.setPointCloudData( UnsafeRawPointer( pointCloudCache.pointCloud ),
-                                              pointCount: pointCloudCache.pointCount,
-                                              pointStride: MemoryLayout<simd_float4>.stride,
-                                              useDoublePrecision: false )
-                
                 do {
+                    
+                    try self.fsCtx.setPointCloudData( UnsafeRawPointer( pointCloudCache.pointCloud ),
+                                                  pointCount: pointCloudCache.pointCount,
+                                                  pointStride: MemoryLayout<simd_float4>.stride,
+                                                  useDoublePrecision: false )
+                    
                     if let result = try self.fsCtx.findSurface(featureType: targetType, seedIndex: pickIdx, seedRadius: scaledTouchRadius, requestInlierFlags: false)
                     {
                         if let planeParam = result.getAsPlaneResult()

@@ -17,6 +17,7 @@
 		2B696ADA2806BB3A004C972B /* FindSurfaceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B696AD92806BB3A004C972B /* FindSurfaceHelper.swift */; };
 		2B696ADC2806CEA6004C972B /* models in Resources */ = {isa = PBXBuildFile; fileRef = 2B696ADB2806CEA6004C972B /* models */; };
 		2B696ADE2806CEE6004C972B /* ModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B696ADD2806CEE6004C972B /* ModelHelper.swift */; };
+		F3CA3CF92D5DFB1600E66EFB /* FindSurface-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = F3CA3CF82D5DFB1600E66EFB /* FindSurface-iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,7 +47,6 @@
 		2B696AD92806BB3A004C972B /* FindSurfaceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSurfaceHelper.swift; sourceTree = "<group>"; };
 		2B696ADB2806CEA6004C972B /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		2B696ADD2806CEE6004C972B /* ModelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelper.swift; sourceTree = "<group>"; };
-		F394F401280D7A470004C993 /* FindSurfaceFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FindSurfaceFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CA3CF92D5DFB1600E66EFB /* FindSurface-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +82,6 @@
 		2B696AB528068B72004C972B /* ARSceneKitFindSurfaceDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F394F401280D7A470004C993 /* FindSurfaceFramework.framework */,
 				2B696AB628068B72004C972B /* AppDelegate.swift */,
 				2B696ABA28068B72004C972B /* ViewController.swift */,
 				2B696ABC28068B72004C972B /* Main.storyboard */,
@@ -133,7 +133,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					2B696AB228068B72004C972B = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -149,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 2B696AAA28068B72004C972B;
+			packageReferences = (
+				F3CA3CF72D5DFB1600E66EFB /* XCRemoteSwiftPackageReference "FindSurface-iOS" */,
+			);
 			productRefGroup = 2B696AB428068B72004C972B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +247,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -304,6 +308,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -330,10 +335,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -345,7 +346,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,10 +369,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -383,7 +380,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3CA3CF72D5DFB1600E66EFB /* XCRemoteSwiftPackageReference "FindSurface-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://www.github.com/CurvSurf/FindSurface-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3CA3CF82D5DFB1600E66EFB /* FindSurface-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3CA3CF72D5DFB1600E66EFB /* XCRemoteSwiftPackageReference "FindSurface-iOS" */;
+			productName = "FindSurface-iOS";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B696AAB28068B72004C972B /* Project object */;
 }
